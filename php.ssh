@@ -13,8 +13,8 @@ fi
 vp=$(php -v |head -n1 |cut -c5)
 if [ "$vp" -eq 5 ];then
 	actual=$(php -v| head -n1 | grep --only-matching --perl-regexp "5\.\\d+")
-elif [ "$vp" -eq 7 ];then
-	actual=$(php -v| head -n1 | grep --only-matching --perl-regexp "7\.\\d+")
+elif [ "$vp" -eq 8 ];then
+	actual=$(php -v| head -n1 | grep --only-matching --perl-regexp "8\.\\d+")
 else
 echo "Cant get actual php versión"
 echo "Run php -v and ask on forum or yo@skamasle.com"
